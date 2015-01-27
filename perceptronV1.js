@@ -29,9 +29,9 @@ perceptron.prototype.constructor = perceptron;
 var myPerceptron = new perceptron(2, 3, 1);
 var myTrainer = new Trainer(myPerceptron);
 
-myTrainer.XOR();
-myPerceptron.activate([0, 0]);
-myPerceptron.activate([0, 1]);
-myPerceptron.activate([1, 0]);
-myPerceptron.activate([1, 1]);
+console.log(myTrainer.XOR());
+console.log(myPerceptron.activate([0, 0]));
+console.log(myPerceptron.activate([0, 1]));
+console.log(myPerceptron.activate([1, 0]));
+console.log(myPerceptron.activate([1, 1]));
 
